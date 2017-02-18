@@ -5,6 +5,7 @@ import java.util.List;
 
 /**
  * Created by cjs on 2017/2/5.
+ * 影片数据对象
  */
 
 public class FilmData {

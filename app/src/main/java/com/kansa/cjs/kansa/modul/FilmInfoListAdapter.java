@@ -18,6 +18,7 @@ import java.util.ArrayList;
 
 /**
  * Created by cjs on 2017/2/5.
+ * 电影数据列表的适配器
  */
 
 public class FilmInfoListAdapter extends BaseAdapter {

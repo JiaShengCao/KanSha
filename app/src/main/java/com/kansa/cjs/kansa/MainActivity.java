@@ -17,6 +17,7 @@ import com.kansa.cjs.kansa.modul.DecodeJson;
 import com.kansa.cjs.kansa.modul.FilmData;
 import com.kansa.cjs.kansa.modul.FilmInfoListAdapter;
 import com.kansa.cjs.kansa.modul.GetPostUtil;
+import com.kansa.cjs.kansa.widge.MyEditextWithDele;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -29,7 +30,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
     private Button btn_find;//搜索按钮
     private Button btn_cancel;//取消按钮
-    private EditText ET_testInfo;//文本输入框
+    private MyEditextWithDele ET_testInfo;//文本输入框
     private String params;//查询参数
     private String key = "0f22f8075ffcc4d20c9348f5fb4137eb";//申请密钥
     private ListView filmlist;
@@ -45,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         filmlist = (ListView) findViewById(R.id.film_list);
         btn_cancel = (Button) findViewById(R.id.Btn_cancel);
         btn_find = (Button) findViewById(R.id.Btn_find);
-        ET_testInfo = (EditText) findViewById(R.id.ET_info);
+        ET_testInfo = (MyEditextWithDele) findViewById(R.id.ET_info);
         //显示查询的结果
         final Handler mhandler = new Handler() {
             @Override
