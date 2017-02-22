@@ -1,12 +1,13 @@
-package com.kansa.cjs.kansa;
+package com.kansa.cjs.kansa.control;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageButton;
+
+import com.kansa.cjs.kansa.R;
 
 /**
  * Created by cjs on 2017/2/3.

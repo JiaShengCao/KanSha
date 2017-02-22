@@ -7,45 +7,58 @@
 	android:layout_height="match_parent"
 	android:background="#cfcdcd"
 	android:orientation="vertical"
-	tools:context="com.kansa.cjs.kansa.MainActivity">
+	tools:context="com.kansa.cjs.kansa.control.MainActivity">
 	<LinearLayout android:layout_width="match_parent"
 	              android:layout_height="50dp"
+	              android:paddingTop="3dp"
 	              android:orientation="horizontal">
-		<Button
+		<ImageButton
 			android:id="@+id/Btn_cancel"
 			android:layout_width="0dp"
 			android:layout_height="match_parent"
 			android:layout_marginLeft="10dp"
 			android:layout_weight="1"
-			android:background="#edeaea"
-			android:text="@string/cancel"/>
+			android:background="@color/my_touming"
+			android:src="@mipmap/fanhui"
+			/>
 
 		<com.kansa.cjs.kansa.widge.MyEditextWithDele
-			android:textColor="#e6e3e3"
 			android:id="@+id/ET_info"
 			android:layout_width="0dp"
 			android:layout_height="40dp"
 			android:layout_marginEnd="10dp"
 			android:layout_marginStart="10dp"
 			android:layout_weight="4"
-			android:background="@drawable/bg_myedittext"/>
+			android:background="@drawable/bg_myedittext"
+			android:paddingLeft="20dp"
+			android:paddingRight="20dp"
+			android:textColor="#e6e3e3"/>
 
-		<Button
+		<ImageButton
 			android:id="@+id/Btn_find"
 			android:layout_width="0dp"
 			android:layout_height="match_parent"
 			android:layout_marginEnd="10dp"
 			android:layout_weight="1"
-			android:background="#edeaea"
-			android:text="@string/find"/>
+			android:background="@color/my_touming"
+			android:src="@mipmap/sousuo"
+			/>
 	</LinearLayout>
 
-	<ListView
-		android:id="@+id/film_list"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content">
+	<FrameLayout android:layout_width="match_parent"
+	             android:layout_height="match_parent">
+		<ProgressBar
+				android:visibility="gone"
+					android:id="@+id/myprogress"
+					android:layout_width="match_parent"
+		             android:layout_height="wrap_content"
+		             android:layout_gravity="center"/>
+		<ListView
+			android:id="@+id/film_list"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
 
-	</ListView>
-
+		</ListView>
+	</FrameLayout>
 
 </LinearLayout>

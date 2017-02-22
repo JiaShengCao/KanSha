@@ -33,6 +33,8 @@ public class DecodeJson {
         String tag = result.getString("tag");
         String act = result.getString("act");
         String year = result.getString("year");
+        String dir=result.getString("dir");
+        String area=result.getString("area");
         String temp = null;
 
         HashMap<String, String> playlink = new HashMap<>();
@@ -78,6 +80,8 @@ public class DecodeJson {
         filmData.setTitle(title);
         filmData.setTag(tag);
         filmData.setYear(year);
+        filmData.setDir(dir);
+        filmData.setArea(area);
 
         Log.e("eeeeeeeeeeeee", "cover is " + cover + "  title is " + title + "  tag is: " + tag);
         return filmData;

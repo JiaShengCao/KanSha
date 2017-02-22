@@ -4,7 +4,7 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical"
-              tools:context="com.kansa.cjs.kansa.MainActivity">
+              tools:context="com.kansa.cjs.kansa.control.MainActivity">
 	<LinearLayout android:layout_width="match_parent"
 	              android:layout_height="60dp"
 	              android:background="#dad7d7"
@@ -27,7 +27,8 @@
 			android:layout_marginEnd="20dp"
 			android:layout_marginTop="15dp"
 			android:layout_weight="1"
-			android:src="@mipmap/ic_launcher"/>
+			android:background="@color/my_touming"
+			android:src="@mipmap/sousuo"/>
 	</LinearLayout>
 	<TextView
 		android:layout_width="match_parent"

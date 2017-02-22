@@ -77,7 +77,7 @@ public class MyEditextWithDele extends EditText{
             int eventy= (int) event.getRawY();
             Rect rect=new Rect();
             getGlobalVisibleRect(rect);
-            rect.left=rect.right-50;
+            rect.left=rect.right-200;
             if (rect.contains(eventx,eventy)){
                 setText("");
             }

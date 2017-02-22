@@ -31,6 +31,7 @@ public class FilmInfoListAdapter extends BaseAdapter {
 
     }
 
+
     @Override
     public int getCount() {
         return filmdata == null ? 0 : filmdata.size();
